@@ -1,0 +1,21 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "npx babel-node --presets @babel/preset-env app.js",
+    "build": "npx babel --presets @babel/preset-env app.js --out-dir dist",
+    "start": "node dist/app.js",
+    "postinstall": "npm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5"
+  },
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
